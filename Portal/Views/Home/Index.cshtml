@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12 nopadding">
+        <table id="tblClassData" class="table-responsive display" cellspacing="0" style="width:100%">
+            <thead>
+                <tr>
+                    <th style="visibility:hidden">Id</th>
+                    <th style="width:20%;">Name</th>
+                    <th style="width:30%;">Location</th>
+                    <th style="width:30%;">Teacher Name</th>
+                    <th style="width:10%;"></th>
+                    <th style="width:10%;"></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <button id="addClass">Add Class</button>
+</div>
+<label id="labelClass"></label>
+<input type="hidden" id="hiddenId" value="">
+<div class="row">
+    <div class="col-md-12 nopadding">
+        <table id="tblStudentData" class="table-responsive display" cellspacing="0" style="width:100%">
+            <thead>
+                <tr>
+                    <th style="visibility:hidden">Id</th>
+                    <th style="width:40%;">Full Name</th>
+                    <th style="width:20%;">Age</th>
+                    <th style="width:20%;">GPA</th>
+                    <th style="width:10%;"></th>
+                    <th style="width:10%;"></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <button>Add Student</button>
+</div>
+<div class="row">
+    <div class="col-md-12 nopadding">
+        <div id="dialogLanguage" class="col-md-12 dialogCls" style="width:500px">
+            <div id="addLanguageForm" style="margin-top:20px">
+                <div class="rowMarginAddFileType">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="popTitleCls">Name</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="text" id="ClassName" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="rowMarginAddFileType">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="popTitleCls">Location</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="text" id="LocationName" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="rowMarginAddFileType">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label id="contextLabel" class="popTitleCls">Teacher Name</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-12">
+                            <input type="text" id="TeacherName" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-12 nopadding">
+                        <div class="pull-right" style="padding-right:12px;">
+                            <div class="translateButton" data-translateId="cancel" style="float:left; padding-right:10px">
+                                <button type="button" class="btn btn-secondary btn-cancel" data-translateId="cancelButton">Cancel</button>
+                            </div>
+                            <div class="translateButton" data-translateId="save" style="float:left">
+                                <button class="btn btn-primary-login" data-translateId="saveButton" id="saveClassButton">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/portal.js"></script>
+}
