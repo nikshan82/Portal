@@ -152,3 +152,5 @@ function GetClassFormDetails() {
 function GetStudentFormDetails() {
     return { Name: $("#ClassName").val(), Location: $("#LocationName").val(), Teacher: $("#TeacherName").val(), Id: $("#dialogLanguage").data('id') };
 }
+
+///testst
